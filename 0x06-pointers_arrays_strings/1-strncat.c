@@ -4,7 +4,7 @@
  * using at most n bytes from src
  * @n: input value
  * @src: input value
- * @dest: input val
+ * @dest: input value
  *
  * Return: dest
 */
