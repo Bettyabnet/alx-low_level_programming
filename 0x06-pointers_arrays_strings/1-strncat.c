@@ -21,9 +21,9 @@ char *_strncat(char *dest, char *src, int n)
 	B = 0;
 	while (B < n && src[B] != '\0')
 	{
-		dest[A] = src[B];
-		A++;
-		B++;
+	dest[A] = src[B];
+	A++;
+	B++;
 	}
 	dest[A] = '\0';
 	return (dest);
