@@ -24,7 +24,7 @@ char *_strncat(char *dest, char *src, int n)
 		A++;
 		B++;
 	}
-	
+
 	dest[A] = '\0';
 	return (dest);
 }
