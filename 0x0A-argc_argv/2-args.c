@@ -2,8 +2,9 @@
 #include <stdio.h>
 /**
  * main - prints all arguments it receives.
- * @argc: counts an argument passed on the program
- * @argv: an array of strings
+ * @argc: number of arguments
+ * @argv: an array of arguments
+ *
  * return: always 0 (success)
 */
 int main(int argc __attribute__((unused)), char *argv[])
