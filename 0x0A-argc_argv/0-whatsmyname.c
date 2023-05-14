@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 
+int main(int argc __attribute__((unused)), char *argv[]);
 /**
  * main - prints its name
  * @argc: counts an argument passed on the program
