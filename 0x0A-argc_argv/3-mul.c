@@ -1,24 +1,23 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - prints all arguments it receives.
- * atoi: converts string into int
- *
- * return: always 0 (success)
+ * main - entry point
+ * @argc: No of command line arguments
+ * @argv: Array name
+ * Return: always 0 (success)
 */
 int main(int argc, char *argv[])
 {
 	int i, j, k;
 
-	if (i, j, k) != int
+	if (argc != 3)
 	{
-		printf ("Error\n");
+		printf("Error\n");
 		return (1);
 	}
-
-	else if (k == i * j)
-	{
-		printf("%s\n", argv[k]);
-		return (0);
-	}
+	i = atoi(argv[1]);
+	j = atoi(argv[2]);
+	k = i * j;
+	printf("%d\n", ans);
+	return (0);
 }
