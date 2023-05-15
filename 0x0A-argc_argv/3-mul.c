@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - entry point
  * @argc: No of command line arguments
@@ -18,6 +19,6 @@ int main(int argc, char *argv[])
 	i = atoi(argv[1]);
 	j = atoi(argv[2]);
 	k = i * j;
-	printf("%d\n", ans);
+	printf("%d\n", k);
 	return (0);
 }
