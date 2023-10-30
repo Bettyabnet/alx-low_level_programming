@@ -1,19 +1,27 @@
+#include "hash_tables.h"
 #include <stdlib.h>
 
-typedef struct {
-    unsigned long int size;
-    /* Other members of the hash table structure */
-} hash_table_t;
+/**
+ * hash_table_create - A function that creates a hash table.
+ * @size: The size of hash table.
+ * Return: A pointer to the new hash table in memory (heap).
+ */
+hash_table_t *hash_table_create(unsigned long int size)
+{
+	unsigned long int i = 0;
+	hash_table_t *new_table = NULL;
 
-hash_table_t *hash_table_create(unsigned long int size) {
-    hash_table_t *table = malloc(sizeof(hash_table_t));
-
-    if (table == NULL) {
-        return NULL;  /* Return NULL if memory allocation failed*/
-    }
-
-    table->size = size;
-    /* Initialize other members of the hash table structure */
-
-    return table;
+	new_table = malloc(sizeof(hash_table_t));
+	if (!new_table)
+		return (NULL);
+	new_table->size = size;
+	new_table->array = malloc(sizeof(hash_node_t *) * size);
+	if (!new_table->array)
+	{
+		free(new_table);
+		return (NULL);
+	}
+	for (; i < size; i++)
+		(new_table->array)[i] = NULL;
+	return (new_table);
 }
